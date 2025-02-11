@@ -29,28 +29,28 @@ interface TestimonialsSectionProps {
 const defaultTestimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Elikrem Memmedov",
     role: "Patient",
     content:
-      "The best dental experience I've ever had. The staff is incredibly professional and caring. I particularly appreciated how Dr. Smith took the time to explain every procedure in detail.",
+      "Yaşadığım ən yaxşı diş təcrübəsi. Heyət inanılmaz dərəcədə peşəkar və qayğıkeşdir. Mən xüsusilə Dr. Smitin hər proseduru ətraflı izah etmək üçün necə vaxt ayırdığını yüksək qiymətləndirdim.",
     avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=sarah",
     rating: 5,
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Agabala",
     role: "Patient",
     content:
-      "State-of-the-art facility with a team that truly cares about your dental health. The new digital scanning technology they use is amazing - no more uncomfortable traditional impressions!",
+      "Diş sağlamlığınıza həqiqətən əhəmiyyət verən komanda ilə ən müasir qurğu. Onların istifadə etdiyi yeni rəqəmsal skanlama texnologiyası heyrətamizdir - daha narahat olan ənənəvi təəssüratlar yoxdur!",
     avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=michael",
     rating: 5,
   },
   {
     id: 3,
-    name: "Emily Davis",
+    name: "Hacibala",
     role: "Patient",
     content:
-      "Exceptional service and results. I couldn't be happier with my smile transformation. The entire team made me feel comfortable throughout my treatment journey.",
+      "Müstəsna xidmət və nəticələr. Təbəssümümün dəyişməsindən daha xoşbəxt ola bilməzdim. Bütün komanda müalicə səyahətim boyu məni rahat hiss etdi.",
     avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=emily",
     rating: 5,
   },
@@ -117,10 +117,10 @@ const TestimonialsSection = ({
           className="text-center mb-12"
         >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            What Our Patients Say
+            Pasientlerimizin Yorumlari
           </h2>
           <p className="text-lg text-gray-600">
-            Real experiences from our valued patients
+            Deyerli pasientlerimizin bizimle birlikte olan tecrubeleri
           </p>
         </motion.div>
 

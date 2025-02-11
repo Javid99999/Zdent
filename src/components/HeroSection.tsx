@@ -11,8 +11,8 @@ interface HeroSectionProps {
 }
 
 const HeroSection = ({
-  title = "Modern Dental Care for Your Family",
-  subtitle = "Experience exceptional dental care in a comfortable and state-of-the-art environment",
+  title = "Zdent modern dis klinikasi",
+  subtitle = "Rahat, agrisiz ve stressiz dislerinizi yuksek seviye mualice edin!",
   imageUrl = "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1512&h=800&fit=crop",
   onBookAppointment = () => console.log("Book appointment clicked"),
 }: HeroSectionProps) => {
@@ -30,7 +30,7 @@ const HeroSection = ({
         />
       </motion.div>
 
-      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,10 +44,10 @@ const HeroSection = ({
           <Button
             size="lg"
             onClick={onBookAppointment}
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full"
+            className="bg-gradient-to-r from-pink-700 to-cyan-700 hover:from-pink-600/90 hover:to-cyan-600/90  text-white px-8 py-6 text-lg rounded-full"
           >
             <Calendar className="mr-2 h-5 w-5" />
-            Book Your Appointment
+            Reserve et!
           </Button>
         </motion.div>
       </div>

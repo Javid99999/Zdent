@@ -46,40 +46,41 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                Modern Dental
+              <h3 className="text-2xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-pink-600 to-cyan-500 bg-clip-text text-transparent">Zdent</span>
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Providing exceptional dental care with modern technology and a
-                gentle touch.
+                Modern texnalogialar ile ve diqqetli el islerimiz ile gulusunuz goz gamastiracaq
+                {/* Providing exceptional dental care with modern technology and a
+                gentle touch. */}
               </p>
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold text-blue-800 mb-4">
-                Contact Us
+                Elage
               </h3>
               <div className="space-y-2 text-gray-600">
                 <p className="flex items-center justify-center md:justify-start gap-2">
-                  <span className="font-medium">Address:</span> 123 Dental
-                  Street
+                  <span className="font-medium">Adress:</span> 123 Zdent
+                  kucesi blah blah
                 </p>
-                <p>City, State 12345</p>
+                <p>Baku, ddsd 12345</p>
                 <p className="flex items-center justify-center md:justify-start gap-2">
-                  <span className="font-medium">Phone:</span> (555) 123-4567
+                  <span className="font-medium">Elaqe:</span> (050) 999-999
                 </p>
                 <p className="flex items-center justify-center md:justify-start gap-2">
                   <span className="font-medium">Email:</span>{" "}
-                  info@moderndental.com
+                  info@zdent.com
                 </p>
               </div>
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold text-blue-800 mb-4">
-                Office Hours
+                Is saatlarimiz
               </h3>
               <div className="space-y-2 text-gray-600">
                 <p className="flex items-center justify-center md:justify-start gap-2">
-                  <span className="font-medium">Mon - Fri:</span> 9:00 AM - 6:00
+                  <span className="font-medium">Bazer-ertesi - Cuma:</span> 9:00 AM - 6:00
                   PM
                 </p>
                 <p className="flex items-center justify-center md:justify-start gap-2">
@@ -87,14 +88,14 @@ const Home = () => {
                   PM
                 </p>
                 <p className="flex items-center justify-center md:justify-start gap-2">
-                  <span className="font-medium">Sunday:</span> Closed
+                  <span className="font-medium">Bazar:</span> Bagli
                 </p>
               </div>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-blue-200 text-center">
             <p className="text-gray-600">
-              © {new Date().getFullYear()} Modern Dental. All rights reserved.
+              © {new Date().getFullYear()} Zdent. All rights reserved.
             </p>
           </div>
         </div>

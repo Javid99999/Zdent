@@ -44,15 +44,15 @@ const AppointmentWidget = ({
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="bg-white sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Schedule Appointment</DialogTitle>
+          <DialogTitle>Rezerve Plani</DialogTitle>
           <DialogDescription>
-            Choose your preferred date and time for your dental appointment.
+            Rezervaciya ucun uygun zamani seciniz.
           </DialogDescription>
         </DialogHeader>
 
         <div className="grid gap-4 py-4">
           <div className="grid gap-2">
-            <Label>Select Date</Label>
+            <Label>Tarixi seciniz</Label>
             <Calendar
               mode="single"
               selected={date}
@@ -63,7 +63,7 @@ const AppointmentWidget = ({
           </div>
 
           <div className="grid gap-2">
-            <Label>Available Times</Label>
+            <Label>Uygun vaxtlar</Label>
             <Select>
               <SelectTrigger>
                 <SelectValue placeholder="Select time" />
@@ -82,24 +82,24 @@ const AppointmentWidget = ({
           </div>
 
           <div className="grid gap-2">
-            <Label>Full Name</Label>
-            <Input placeholder="John Doe" />
+            <Label>Ad Soyad</Label>
+            <Input placeholder="Hadi Bidi" />
           </div>
 
           <div className="grid gap-2">
-            <Label>Phone Number</Label>
-            <Input placeholder="(555) 555-5555" type="tel" />
+            <Label>Elaqe nomre</Label>
+            <Input placeholder="(050) 999-999" type="tel" />
           </div>
 
           <div className="grid gap-2">
             <Label>Email</Label>
-            <Input placeholder="john@example.com" type="email" />
+            <Input placeholder="ornek@ornek.com" type="email" />
           </div>
         </div>
 
         <DialogFooter>
           <Button variant="outline" onClick={onClose}>
-            Cancel
+            Imtina
           </Button>
           <Button
             onClick={() => {
@@ -107,7 +107,7 @@ const AppointmentWidget = ({
               onClose();
             }}
           >
-            Book Appointment
+            Rezerve et
           </Button>
         </DialogFooter>
       </DialogContent>

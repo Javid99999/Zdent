@@ -13,47 +13,55 @@ interface ServicesGridProps {
 }
 
 const defaultServices: Service[] = [
+  /*
+  https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop
+  https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=300&fit=crop
+  https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=300&fit=crop
+  https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=300&fit=crop
+  https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop
+  https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop
+  */
   {
-    title: "General Dentistry",
+    title: "Genel Dis mualicesi",
     description:
-      "Comprehensive dental care including cleanings, fillings, and preventive treatments.",
+      "Temizlik, dolgu ve qoruyucu mualice daxil etrafli dis baximi.",
     imageUrl:
-      "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&h=300&fit=crop",
+      "",
   },
   {
-    title: "Cosmetic Dentistry",
+    title: "Kozmetik Dis",
     description:
-      "Transform your smile with whitening, veneers, and other aesthetic treatments.",
+      "Gulusunuze beyazlamis ve gos gamastirici disler elave edin!.",
     imageUrl:
-      "https://images.unsplash.com/photo-1571772996211-2f02c9727629?w=400&h=300&fit=crop",
+      "",
   },
   {
-    title: "Orthodontics",
+    title: "Ortodontis",
     description:
-      "Straighten your teeth with modern braces and clear aligner options.",
+      "Dizlerinizi modern dis telleri ve seffaf hizalayici ile secenekleri ile duzeltin.",
     imageUrl:
-      "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=300&fit=crop",
+      "",
   },
   {
-    title: "Oral Surgery",
+    title: "Agiz Cerrahisi",
     description:
-      "Expert surgical procedures including wisdom teeth removal and dental implants.",
+      "Agil disi cekimler ve dis implantlari daxil olmaq uzere pesekar cerrahi emeliyatlar.",
     imageUrl:
-      "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=400&h=300&fit=crop",
+      "",
   },
   {
-    title: "Pediatric Dentistry",
+    title: "Usaq dis hekimi",
     description:
-      "Specialized dental care for children in a friendly, comfortable environment.",
+      "Usaqlar ucun guvenilir ve rahat muhitde dis baximi.",
     imageUrl:
-      "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&h=300&fit=crop",
+      "",
   },
   {
-    title: "Emergency Care",
+    title: "Tecili yardim",
     description:
-      "24/7 emergency dental services for immediate pain relief and urgent treatments.",
+      "Tecili mualiceler ucun 7/24 dis hizmetleri",
     imageUrl:
-      "https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=400&h=300&fit=crop",
+      "",
   },
 ];
 
@@ -68,10 +76,10 @@ const ServicesGrid = ({ services = defaultServices }: ServicesGridProps) => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Services
+            Bizim servislerimiz
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive dental care solutions tailored to your needs
+            Ehtiyaciniza gore sekillenmis etrafli dis baximi!
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">

@@ -26,71 +26,71 @@ interface DoctorProps {
   specialty: string;
   experience: string;
   education: string;
-  imageUrl: string;
+  // imageUrl: string;
 }
 
 const allDoctors: DoctorProps[] = [
   {
-    name: "Dr. Sarah Miller",
-    title: "Lead Dentist",
-    specialty: "Cosmetic Dentistry",
-    experience: "15+ years",
-    education: "DDS, Harvard School of Dental Medicine",
-    imageUrl:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    name: "Dr. Orxan",
+    title: "Bas dis hekimi",
+    specialty: "Kozmetik dis hekimliyi",
+    experience: "15+ il",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
   },
   {
-    name: "Dr. James Chen",
-    title: "Orthodontist",
-    specialty: "Orthodontics & Invisalign",
-    experience: "12+ years",
-    education: "DMD, University of Pennsylvania",
-    imageUrl:
-      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+    name: "Dr. Tiktikxanim Qaraqizov",
+    title: "Ortodontist",
+    specialty: "Ortodontist",
+    experience: "12+ il",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
   },
   {
-    name: "Dr. Emily Thompson",
-    title: "Pediatric Specialist",
-    specialty: "Pediatric Dentistry",
-    experience: "10+ years",
-    education: "DDS, UCLA School of Dentistry",
-    imageUrl:
-      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
+    name: "Dr. Sirbala Aslanov",
+    title: "Usaq hekimi",
+    specialty: "Usaq dis hekimliyi",
+    experience: "10+ il",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop",
   },
   {
-    name: "Dr. Michael Roberts",
-    title: "Oral Surgeon",
-    specialty: "Oral & Maxillofacial Surgery",
+    name: "Dr. Sebdul Luleyev",
+    title: "Agiz ve Diz cerrahisi",
+    specialty: "Agiz ve Cene Cerahisi",
     experience: "14+ years",
-    education: "DMD, Boston University",
-    imageUrl:
-      "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
   },
   {
-    name: "Dr. Lisa Wang",
+    name: "Dr. Gulcohre Semenderli",
     title: "Endodontist",
-    specialty: "Root Canal Therapy",
-    experience: "11+ years",
-    education: "DDS, University of Michigan",
-    imageUrl:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    specialty: "Dis koku ve kanal mualicesi",
+    experience: "11+ il",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
   },
   {
-    name: "Dr. David Martinez",
+    name: "Dr. Elibala Gulbala",
     title: "Periodontist",
-    specialty: "Gum Disease Treatment",
-    experience: "13+ years",
-    education: "DDS, NYU College of Dentistry",
-    imageUrl:
-      "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+    specialty: "Dis eti xestelikleri mualicesi",
+    experience: "13+ il",
+    education: "Baki Dovlet",
+    // imageUrl:
+    //   "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
   },
 ];
 
 const Stat = ({ icon, value, label }: StatProps) => (
   <Card className="p-6 text-center bg-white/50 backdrop-blur-sm">
-    <div className="flex justify-center mb-4 text-blue-600">{icon}</div>
-    <div className="text-3xl font-bold mb-2 text-gray-900">{value}</div>
-    <div className="text-sm text-gray-600">{label}</div>
+    <div className="flex justify-center mb-4 text-blue-400">{icon}</div>
+    <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-pink-400 to-cyan-300 bg-clip-text text-transparent">{value}</div>
+    <div className="text-base font-bold text-gray-600">{label}</div>
   </Card>
 );
 
@@ -139,9 +139,9 @@ const DoctorCard = ({
       </div>
       <Button
         onClick={() => setIsAppointmentOpen(true)}
-        className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white"
+        className="mt-6 w-4/5 bg-gradient-to-r from-pink-500 to-cyan-500 hover:from-pink-600/90 hover:to-cyan-600/90 text-white"
       >
-        Book Appointment
+        Reserve et
       </Button>
       <AppointmentWidget
         isOpen={isAppointmentOpen}
@@ -166,33 +166,30 @@ const AboutSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900">
-              Exceptional Dental Care for Your{" "}
-              <span className="text-blue-600">Entire Family</span>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-700">
+              Sizin ucun goz qamastirici dis mualicesi!{" "}
+              <span className="bg-gradient-to-r from-pink-600 to-cyan-500 bg-clip-text text-transparent">Zdent</span>
             </h2>
             <p className="text-lg text-gray-600 mb-8">
-              With over 15 years of experience, our practice combines advanced
-              technology with compassionate care to deliver the best possible
-              dental experience for our patients.
+              15 ilden cox deneyimimiz ile klinikamizin yuksek seviyeli texnalogiyasi ile zerger elleri birlestirerek sizin ucun dislerinizi mualice edirik!
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                 <p className="text-gray-600">
-                  State-of-the-art facilities with the latest dental technology
+                  dis mualicesi ucun en son texnalogiyalara sahibiz!
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                 <p className="text-gray-600">
-                  Comprehensive care from routine cleanings to advanced
-                  procedures
+                  gunluk temizliklerden en son proseslere qeder kapsamli mualice!
                 </p>
               </div>
               <div className="flex items-start space-x-3">
                 <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0" />
                 <p className="text-gray-600">
-                  Comfortable, stress-free environment for patients of all ages
+                  Her yastan pasient ucun stressiz ve agrisiz mualicce!
                 </p>
               </div>
             </div>
@@ -209,22 +206,22 @@ const AboutSection = () => {
             <Stat
               icon={<Users className="h-8 w-8" />}
               value="10,000+"
-              label="Happy Patients"
+              label="Xosbext pasient!"
             />
             <Stat
               icon={<Award className="h-8 w-8" />}
               value="15+"
-              label="Years Experience"
+              label="il deneyim!"
             />
             <Stat
               icon={<CheckCircle className="h-8 w-8" />}
               value="25,000+"
-              label="Procedures Done"
+              label="Isleer goruldu!"
             />
             <Stat
               icon={<Clock className="h-8 w-8" />}
               value="24/7"
-              label="Emergency Care"
+              label="Tecili baxim!"
             />
           </motion.div>
         </div>
@@ -238,12 +235,11 @@ const AboutSection = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Meet Our <span className="text-blue-600">Expert Team</span>
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-600 mb-4">
+              Bizim <span className="bg-gradient-to-r from-pink-600 to-cyan-500 bg-clip-text text-transparent">Tecrubeli Hekimler!</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Our experienced doctors are committed to providing you with the
-              highest quality dental care
+              Tecrubeli hekimlerimiz size agrisiz ve stressiz en yuksek seviye dis mualicesini etmekte qerarlidir!
             </p>
           </motion.div>
 
@@ -265,7 +261,7 @@ const AboutSection = () => {
                 variant="outline"
                 className="text-blue-600 hover:text-blue-700 hover:bg-blue-50 group"
               >
-                See More Doctors
+                Diger Hekimler
                 <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </motion.div>

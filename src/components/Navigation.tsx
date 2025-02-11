@@ -17,19 +17,19 @@ interface NavigationProps {
 }
 
 const Navigation = ({
-  logo = "Modern Dental",
+  logo = "Zdent",
   services = [
     {
-      title: "General Dentistry",
-      description: "Comprehensive dental care for the whole family",
+      title: "Genel",
+      description: "Tum aile ucun etrafli dis baximi",
     },
     {
-      title: "Cosmetic Dentistry",
-      description: "Transform your smile with our aesthetic treatments",
+      title: "Kozmetik Dis hekimliyi",
+      description: "Estetik toxunuslarimiz ile gulusunuz cazibedar edin!",
     },
     {
-      title: "Orthodontics",
-      description: "Straighten your teeth with modern orthodontic solutions",
+      title: "Ortodonti",
+      description: "Dizlerinizi Ortodonti ile duzeldin",
     },
   ],
 }: NavigationProps) => {
@@ -72,8 +72,9 @@ const Navigation = ({
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+          <div className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-cyan-500 bg-clip-text text-transparent">
             {logo}
+            
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,7 +99,7 @@ const Navigation = ({
                     className="text-gray-600 hover:text-blue-600 transition-colors"
                     onClick={() => scrollToSection("services")}
                   >
-                    Services
+                    Servisler
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="grid w-[400px] gap-3 p-4 bg-white rounded-lg shadow-lg">
@@ -125,7 +126,7 @@ const Navigation = ({
                     onClick={() => scrollToSection("about")}
                     className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors"
                   >
-                    About
+                    Hakkimizda
                   </button>
                 </NavigationMenuItem>
 
@@ -135,7 +136,7 @@ const Navigation = ({
                     onClick={() => scrollToSection("testimonials")}
                     className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors"
                   >
-                    Testimonials
+                    Referanslar
                   </button>
                 </NavigationMenuItem>
               </NavigationMenuList>
@@ -148,13 +149,13 @@ const Navigation = ({
                 className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors"
               >
                 <Phone className="h-4 w-4" />
-                (555) 123-4567
+                (050) 999-999
               </Button>
               <Button
-                onClick={() => scrollToSection("appointment")}
-                className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:opacity-90 transition-opacity"
+                onClick={() => scrollToSection("about")}
+                className="bg-gradient-to-r from-pink-500 to-blue-500 text-white hover:opacity-90 transition-opacity"
               >
-                Book Appointment
+                Rezerve Et
               </Button>
             </div>
           </div>
@@ -171,25 +172,25 @@ const Navigation = ({
                 onClick={() => scrollToSection("services")}
                 className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors text-left"
               >
-                Services
+                Servisler
               </button>
               <button
                 onClick={() => scrollToSection("about")}
                 className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors text-left"
               >
-                About
+                Hakkimizda
               </button>
               <button
                 onClick={() => scrollToSection("testimonials")}
                 className="px-4 py-2 text-gray-600 hover:text-blue-600 transition-colors text-left"
               >
-                Testimonials
+                Referanslar
               </button>
               <Button
                 onClick={() => scrollToSection("appointment")}
-                className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white hover:opacity-90 transition-opacity w-full"
+                className="bg-gradient-to-r from-pink-600 to-cyan-500 text-white hover:opacity-90 transition-opacity w-full"
               >
-                Book Appointment
+                Reserve et
               </Button>
             </div>
           </div>
