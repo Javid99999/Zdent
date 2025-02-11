@@ -72,10 +72,15 @@ const Navigation = ({
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
+          
+          <button
+            onClick={() => scrollToSection("hero")}
+          >
           <div className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-cyan-500 bg-clip-text text-transparent">
             {logo}
             
           </div>
+          </button>
 
           {/* Mobile Menu Button */}
           <button

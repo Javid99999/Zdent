@@ -20,7 +20,7 @@ const HeroSection = ({
   const y = useTransform(scrollY, [0, 500], [0, 150]);
 
   return (
-    <div className="relative w-full h-[800px] overflow-hidden bg-white">
+    <div id="hero" className="relative w-full h-[800px] overflow-hidden bg-white">
       <motion.div style={{ y }} className="absolute inset-0">
         <div className="absolute inset-0 bg-black/40 z-10" />
         <img
